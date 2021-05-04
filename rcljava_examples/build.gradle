@@ -28,12 +28,13 @@ ament {
     entryPoints {
         consoleScripts = [
             'add_two_ints_client = org.ros2.rcljava.examples.client.AddTwoIntsClient',
-            'subscriber_node = org.ros2.rcljava.examples.composition.SubscriberNode',
+            'add_two_ints_service = org.ros2.rcljava.examples.service.AddTwoIntsService',
+            'fibonacci_action_server = org.ros2.rcljava.examples.action.FibonacciActionServer',
             'publisher_node = org.ros2.rcljava.examples.composition.PublisherNode',
             'publisher_not_composable = org.ros2.rcljava.examples.publisher.PublisherNotComposable',
             'publisher_lambda = org.ros2.rcljava.examples.publisher.PublisherLambda',
             'publisher_member_function = org.ros2.rcljava.examples.publisher.PublisherMemberFunction',
-            'add_two_ints_service = org.ros2.rcljava.examples.service.AddTwoIntsService',
+            'subscriber_node = org.ros2.rcljava.examples.composition.SubscriberNode',
             'subscriber_not_composable = org.ros2.rcljava.examples.subscriber.SubscriberNotComposable',
             'subscriber_lambda = org.ros2.rcljava.examples.subscriber.SubscriberLambda',
             'subscriber_member_function = org.ros2.rcljava.examples.subscriber.SubscriberMemberFunction',
