@@ -54,9 +54,9 @@ public class FibonacciActionServer {
         public void run() {
           logger.info("Executing goal");
           example_interfaces.action.Fibonacci_Goal goal = (example_interfaces.action.Fibonacci_Goal)goalHandle.getGoal();
+          java.util.List<java.lang.Integer> sequence = new java.util.ArrayList();
           example_interfaces.action.Fibonacci_Feedback feedback =
             new example_interfaces.action.Fibonacci_Feedback();
-          java.util.List<java.lang.Integer> sequence = new java.util.ArrayList();
           sequence.add(0);
           sequence.add(1);
           example_interfaces.action.Fibonacci_Result result =
@@ -74,6 +74,7 @@ public class FibonacciActionServer {
             // Update sequence
             sequence.add(sequence.get(i) + sequence.get(i - 1));
             // Publish feedback
+            feedback.setSequence(sequence);
             goalHandle.publishFeedback(feedback);
             logger.info("Publish feedback");
 
