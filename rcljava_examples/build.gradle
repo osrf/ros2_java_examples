@@ -29,6 +29,7 @@ ament {
         consoleScripts = [
             'add_two_ints_client = org.ros2.rcljava.examples.client.AddTwoIntsClient',
             'add_two_ints_service = org.ros2.rcljava.examples.service.AddTwoIntsService',
+            'add_two_ints_client_in_callback = org.ros2.rcljava.examples.client.AddTwoIntsClientInCallback',
             'fibonacci_action_server = org.ros2.rcljava.examples.action.FibonacciActionServer',
             'publisher_node = org.ros2.rcljava.examples.composition.PublisherNode',
             'publisher_not_composable = org.ros2.rcljava.examples.publisher.PublisherNotComposable',
