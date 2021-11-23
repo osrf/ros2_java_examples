@@ -42,6 +42,8 @@ public class AddTwoIntsClient {
       Future<example_interfaces.srv.AddTwoInts_Response> future =
           client.asyncSendRequest(request);
 
+      RCLJava.spinUntilComplete(node, future);
+
       System.out.println(
           "result of " + request.getA() + " + " + request.getB() + " = " + future.get().getSum());
     }
